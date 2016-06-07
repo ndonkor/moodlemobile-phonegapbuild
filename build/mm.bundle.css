@@ -3424,7 +3424,9 @@ a.subdued {
 .bar-header {
   top: 0;
   border-top-width: 0;
-  border-bottom-width: 1px; }
+  border-bottom-width: 1px; 
+  background-color:blue;
+}
   .bar-header.has-tabs-top {
     border-bottom-width: 0px;
     background-image: none; }
