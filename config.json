@@ -9,5 +9,5 @@
     "wsservice" : "moodle_mobile_app",
     "wsextservice" : "local_mobile",
     "gcmpn": "694767596569",
-    "customurlscheme": "moodlemobile"
+    "customurlscheme": "moodlemobile://link=https://moodle.uew.edu.gh/distance"
 }
