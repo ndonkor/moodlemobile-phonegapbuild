@@ -33,6 +33,9 @@ angular.module('mm.core.login', [])
         url: '/init',
         templateUrl: 'core/components/login/templates/init.html',
         controller: 'mmLoginInitCtrl',
+            onEnter: function($state) {
+        $state.go('mm_login.credentials', {siteurl: 'http://moodle.uew.edu.gh/distance'});
+    }
         cache: false // Disable caching to force controller reload.
     })
 
