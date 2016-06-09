@@ -43,12 +43,15 @@ angular.module('mm.core.login', [])
         url: '/sites',
         templateUrl: 'core/components/login/templates/sites.html',
         controller: 'mmLoginSitesCtrl',
-        onEnter: function($mmLoginHelper, $mmSitesManager) {
+            onEnter: function($state) {
+        $state.go('mm_login.credentials', {siteurl: 'http://moodle.uew.edu.gh/distance'});
+    }
+     //   onEnter: function($mmLoginHelper, $mmSitesManager) {
             // Skip this page if there are no sites yet.
-            $mmSitesManager.hasNoSites().then(function() {
-                $mmLoginHelper.goToAddSite();
-            });
-        }
+       //     $mmSitesManager.hasNoSites().then(function() {
+          //      $mmLoginHelper.goToAddSite();
+         //   });
+        //}
     })
 
     .state('mm_login.site', {
