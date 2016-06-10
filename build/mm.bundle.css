@@ -8752,3 +8752,7 @@ a.wiki_edit_section {
 .button.active, .button.activated {
   box-shadow: none;
   color: #fff; }
+  
+ .bar-content {
+   background-color: #5069A1;
+ }
